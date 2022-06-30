@@ -1,0 +1,78 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  height: 100vh;
+  background: rgb(138, 147, 198);
+  background: radial-gradient(
+    circle,
+    rgba(138, 147, 198, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  flex-direction: column;
+  color: #333;
+}
+
+h1 {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.keys {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.key {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  font-weight: bold;
+  border: 3px solid #fff;
+  margin-bottom: 20px;
+}
+
+.key.active {
+  border: 3px solid #1a1a1a;
+  color: #1a1a1a;
+}
+
+.composicao {
+  width: 260px;
+}
+
+.composicao #input {
+  width: 100%;
+  font-size: 17px;
+  border-radius: 6px;
+  border: 1px solid;
+  padding: 10px 15px;
+}
+
+.composicao button {
+  width: 80%;
+  height: 40px;
+  font-size: 16px;
+  margin-left: 27px;
+  margin-top: 7px;
+  border: 1px solid;
+  border-radius: 6px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+footer {
+  font-size: 20px;
+  margin-top: 20px;
+}
